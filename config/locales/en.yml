@@ -67,7 +67,7 @@ en:
       dow: "%A"
 
   approve: Approve
-  on_stars: on
+  on_stars: 'on'
   stars: stars!
   Approved_reviews: Approved
   approved_text: Unlocked comments will be published within 1-2 business days.
@@ -108,7 +108,7 @@ en:
     show_email: Show user email
     require_login: Authentication required
     form_show: View form for insert review
-    on_stars: on
+    on_stars: 'on'
     write: Write
     a_review: a Review
     name: Name

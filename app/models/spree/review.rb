@@ -12,7 +12,7 @@ module Spree
 
     scope :oldest_first, :order => "created_at asc"
     scope :preview, :limit => Spree::Config[:preview_size], :order => "created_at desc"
-    attr_protected :user_id, :product_id, :location
+    attr_accessible :rating, :review, :name
     
   end
 end
