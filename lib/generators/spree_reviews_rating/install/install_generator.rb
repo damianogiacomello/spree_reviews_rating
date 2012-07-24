@@ -13,6 +13,9 @@ module SpreeReviewsRating
       
       def add_javascripts
         append_file "app/assets/javascripts/store/all.js", "//= require store/spree_reviews_rating\n"
+        append_file "app/assets/javascripts/store/all.js", "// Added as part of the spree_reviews_rating install\n"
+        append_file "app/assets/javascripts/store/all.js", "//= require store/review/index\n"
+        append_file "app/assets/javascripts/store/all.js", "//= require store/review/new\n"
       end
 
       def add_stylesheets
