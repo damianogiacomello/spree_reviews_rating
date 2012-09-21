@@ -3,7 +3,7 @@ class Spree::AbilityDecorator
 
   def initialize(user)
     can :create, Spree::Review do |review|
-      user.has_role?(:user) || !Spree::Config[:require_login]
+      user.has_spree_role?(:user) || !Spree::Config[:require_login]
     end
     can :read, Spree::Review
   end
